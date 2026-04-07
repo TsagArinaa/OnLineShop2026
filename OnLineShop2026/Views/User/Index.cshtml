@@ -1,0 +1,13 @@
+﻿@model User
+@{
+	ViewData["Title"] = "Профиль пользователя";
+}
+
+<div class="card" style="width:18rem;">
+	<img src="@Model.PathImage" class="card-img-top" alt="...">
+	<div class="card-body">
+		<h5 class="card-title">@Model.Name @Model.Surname</h5>
+		<p class="card-text">@Model.Email</p>
+		<a href="/Home/Catalog" class="btn btn-primasy">В каталог</a>
+	</div>
+</div>
